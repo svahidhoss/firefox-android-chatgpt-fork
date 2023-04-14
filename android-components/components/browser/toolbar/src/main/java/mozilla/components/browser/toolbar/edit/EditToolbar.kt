@@ -94,6 +94,7 @@ class EditToolbar internal constructor(
         background = rootView.findViewById(R.id.mozac_browser_toolbar_background),
         icon = rootView.findViewById(R.id.mozac_browser_toolbar_edit_icon),
         editActionsStart = rootView.findViewById(R.id.mozac_browser_toolbar_edit_actions_start),
+        editSummary = rootView.findViewById(R.id.mozac_browser_toolbar_summary_icon),
         editActionsEnd = rootView.findViewById(R.id.mozac_browser_toolbar_edit_actions_end),
         clear = rootView.findViewById<ImageView>(R.id.mozac_browser_toolbar_clear_view).apply {
             setOnClickListener {
@@ -368,6 +369,7 @@ internal class EditToolbarViews(
     val background: ImageView,
     val icon: ImageView,
     val editActionsStart: ActionContainer,
+    val editSummary: ActionContainer,
     val editActionsEnd: ActionContainer,
     val clear: ImageView,
     val url: InlineAutocompleteEditText,
